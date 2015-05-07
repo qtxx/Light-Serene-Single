@@ -1629,3 +1629,19 @@ Details: AskReddit based theme for use on single subs */
     #rem-login-main { display: none; }
 
     .disabled .morelink, .disabled .morelink:hover { background: #f3f3f3; }
+
+/* RES Comment box */
+    .usertext-edit .RESDialogSmall .md.RESDialogContents { background: transparent!important; }
+   .RESDialogSmall.livePreview .gearIcon { margin-top: -12px; margin-right: 0!important; background-color: rgba(0,0,0,.1)!important; }
+
+/* beta program */
+	.beta-hint a {
+		border-right: 1px solid rgba(225,255,255,.25);
+		margin-left: -36px;
+		width: 35px;
+		height: 40px;
+		font-size: 0;
+		background: url(%%flask%%) center no-repeat transparent; }
+
+	.beta-hint a:hover { background-color: #3c444e!important; }
+	.res .beta-hint a { margin-left: -51px; border: 0; }
