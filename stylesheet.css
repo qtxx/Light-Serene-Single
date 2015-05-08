@@ -1646,6 +1646,10 @@ Details: AskReddit based theme for use on single subs */
 	.beta-hint a:hover { background-color: #3c444e!important; }
 	.res .beta-hint a { margin-left: -51px; border: 0; }
 
+	.read-next .read-next-header { background-color: #F6F6F6; border-bottom: 1px solid rgba(0,0,0,.1); }
+	.read-next { background: #fdfdfd; border: 1px solid rgba(0,0,0,.1); }
+	.read-next .read-next-button { background-color: rgba(52,152,219,1); }
+
 /* extras */
 	.comment.collapsed .midcol { visibility: visible !important; }
 	.comment.collapsed .arrow.up, .comment.collapsed .arrow.down { display: none  !important; }
