@@ -192,6 +192,7 @@ Details: AskReddit based theme for use on single subs */
     #header-bottom-right #modmail {
         margin: 0;
         top: 0;
+vertical-align: top;
         width: 35px;
         height: 40px;
         border-right: 1px solid rgba(225,255,255,.25); }
@@ -1653,6 +1654,7 @@ Details: AskReddit based theme for use on single subs */
 /* extras */
 	.comment.collapsed .midcol { visibility: visible !important; }
 	.comment.collapsed .arrow.up, .comment.collapsed .arrow.down { display: none  !important; }
+	.thing.collapsed.deleted.comment { padding-left: 33px!important; }
 	.userTagLink.hasTag, #userTaggerPreview {
 		padding: 0 8px!important;
 		border: 1px solid rgba(0,0,0,.1)!important;
