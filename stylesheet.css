@@ -3,6 +3,8 @@ Stylesheet by qtx
 Release date: April 28th, 2015
 Details: AskReddit based theme for use on single subs */
 
+html { position: relative; }
+
     body { background: #eee; }
     body>.content { margin: 0 20px 20px 10px; z-index: 1; }
 
@@ -359,7 +361,7 @@ vertical-align: top;
     .res .expando-button.image.gallery.expanded:hover,
     .res .expando-button.video-muted.expanded:hover { background: url(%%q-spritesheet%%) -74px -51px no-repeat!important; }
 
-    .RESImage { margin-top: 10px; margin-left: 5px!important; }
+    .RESImage { margin-top: 10px; /*margin-left: 5px!important;*/ }
     .RESGalleryControls .previous { background: url(%%q-spritesheet%%) -154px -57px no-repeat!important; }
     .RESGalleryControls .previous:hover { background: url(%%q-spritesheet%%) -154px -83px no-repeat!important; }
     .RESGalleryControls .next { background: url(%%q-spritesheet%%) -159px -5px no-repeat!important; }
@@ -446,8 +448,9 @@ vertical-align: top;
 
 /* Misc styling */
     .entry .buttons li a { color: #666; }
-    .nsfw-stamp acronym { background: #fff; border-radius: 0; border: 1px solid #e74c3c; color: #c0392b; }
+    .nsfw-stamp acronym { background: #fff; border-radius: 0; border: 1px solid #e74c3c; color: #c0392b; padding: 0 4px; }
     .give-gold { color: #988143!important; }
+.stamp { border: 0!important; }
 
 /* Sticky post */
     .link.stickied .rank:after {
@@ -604,7 +607,7 @@ vertical-align: top;
     .res .commentarea .expando-button.image.expandedExpando,
     .res .commentarea .expando-button.image.expanded,
     .res .commentarea .expando-button.image.gallery.expanded,
-    .res .commentarea .expando-button.video-muted.expanded { background: url(%%q-spritesheet%%) -130px -5px no-repeat !important; opacity: .7; }
+    .res .commentarea .expando-button.video-muted.expanded { background: url(%%q-spritesheet%%) -130px -5px no-repeat !important; opacity: .7; height: 13px !important; width: 19px !important; }
     .commentarea .expando-button.video.expanded:hover,
     .res .commentarea .expando-button.image.expandedExpando:hover,
     .res .commentarea .expando-button.image.expanded:hover,
@@ -1499,11 +1502,11 @@ vertical-align: top;
         padding: 10px 20px 10px 53px;
         margin: 20px 10px;
         position: relative;
+overflow: hidden;
         line-height: 1.2;
         color: #444;
         font-weight: bold;
-        border: 1px solid rgba(0,0,0,0.05);
-        text-align: justify; }
+        border: 1px solid rgba(0,0,0,0.05); }
 
     .thing .md blockquote::before, .wiki-page .wiki-page-content .md.wiki blockquote::before {
         content: "";
@@ -1519,7 +1522,7 @@ vertical-align: top;
     .thing .md blockquote em, .wiki-page .wiki-page-content .md.wiki blockquote em { font-style: italic; }
     .commentarea .thing .md blockquote, .wiki-page .wiki-page-content .commentarea .md.wiki blockquote { margin: 10px; background: rgba(174,174,184,0.1); }
 
-    .side blockquote { background: #fff; padding: 10px; border: 1px solid rgba(0,0,0,.1); border-left: 2px solid #3498db; }
+    .side blockquote { background: #fff; padding: 10px; border: 1px solid rgba(0,0,0,.1); border-left: 2px solid #3498db; text-align: justify; }
     .side blockquote p { margin: 0!important; }
 
 /* Misc */
